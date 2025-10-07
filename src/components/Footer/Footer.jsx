@@ -1,8 +1,29 @@
 import React from 'react';
 import Logo from '../../assets/logo.png'
+
+import { FaFacebookSquare, FaGithub, FaYoutube } from 'react-icons/fa';
 import { Link } from 'react-router';
+import { TiBusinessCard } from 'react-icons/ti';
 
 const Footer = () => {
+
+    // Social Links
+      const handleFacebookIcon = () => {
+    window.open("https://www.facebook.com/NokibHasan.Nazmul", "_blank");
+      }
+      const handleYouTubeIcon = () => {
+    window.open("https://www.youtube.com/", "_blank");
+      }
+    
+    const handleGitHubClick = () => {
+    window.open("https://github.com/nokib-web", "_blank");
+  };
+    const handleClick = () => {
+    window.open("https://www.facebook.com/profile.php?id=61579797098515", "_blank");
+  };
+
+  
+
     return (
         <div>
             <footer className="footer sm:footer-horizontal  bg-base-300 text-base-content p-10">
@@ -35,6 +56,15 @@ const Footer = () => {
                     <a className="link link-hover">Terms of use</a>
                     <a className="link link-hover">Privacy policy</a>
                     <a className="link link-hover">Cookie policy</a>
+                    <a className="link link-hover">Legal policy</a>
+                </nav>
+                <nav>
+                    <h6 className="footer-title">Social</h6>
+                    <a onClick = {handleFacebookIcon} className="my-1"><FaFacebookSquare /></a>
+                    <a onClick = {handleYouTubeIcon} className="my-1"><FaYoutube /></a>
+                    <a onClick = {handleGitHubClick} className="my-1"><FaGithub /></a>
+                    <a onClick = {handleClick} className="my-1"><TiBusinessCard /></a>
+                  
                 </nav>
             </footer>
 
