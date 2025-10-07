@@ -1,9 +1,15 @@
 import React from 'react';
+import Banner from '../../components/Banner/Banner';
+import TrandingsApp from '../TrandingsApp/TrandingsApp';
+
 
 const Home = () => {
     return (
-        <div>
-            <h2>Home</h2>
+        <div className='bg-base-200'>
+            <Banner></Banner>
+            <TrandingsApp></TrandingsApp>
+           
+
         </div>
     );
 };

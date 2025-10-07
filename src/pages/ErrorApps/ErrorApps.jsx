@@ -1,9 +1,32 @@
 import React from 'react';
+import { Link } from 'react-router';
+import Navbar from '../../components/Header/Navbar';
+import Footer from '../../components/Footer/Footer';
+import ErrorAppImg from '../../assets/App-Error.png'
 
 const ErrorApps = () => {
     return (
-        <div>
-            <p>Apps Not Found</p>
+      <div>
+
+            <div className='min-h-screen flex flex-col'>
+                <Navbar></Navbar>
+
+                <div >
+                    <img className='items-center justify-center mx-auto my-4' src={ErrorAppImg} alt="Error" />
+                </div>
+                <div className='my-4 '>
+                    <div className='text-center items-center'>
+                        <h1 className='font-bold text-3xl'>Oops, page not found!</h1>
+                        <p className='text-gray-700'>The page you are looking for is not available.</p>
+                        <Link to='/'><button className='btn my-2 rounded-lg text-white bg-gradient-to-tl from-[#9F62F2] to-[#632EE3]'>Go Back!</button></Link>
+                    </div>
+                </div>
+
+
+                <Footer></Footer>
+            </div>
+
+
         </div>
     );
 };

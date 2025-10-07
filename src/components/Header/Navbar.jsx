@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router';
 import './Header.css'
 import Logo from '../../assets/logo.png'
+import { FaGithub } from 'react-icons/fa';
 
 const Navbar = () => {
 
@@ -31,7 +32,7 @@ const Navbar = () => {
                         
                     </ul>
                 </div>
-                <Link to='/' className=" flex items-center font-bold text-blue-600 text-xl"> <span><img className='max-h-[40px]' src={Logo} alt="" /></span>  HERO.IO</Link>
+                <Link to='/' className=" flex items-center font-bold text-xl"> <span><img className='max-h-[40px]' src={Logo} alt="" /></span>  <span className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text'>HERO.IO</span></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -43,7 +44,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn" onClick={handleGitHubClick}>Contributes</a>
+                <a className="btn rounded-lg text-white bg-gradient-to-tl from-[#9F62F2] to-[#632EE3] hover:scale-105 " onClick={handleGitHubClick}> <FaGithub></FaGithub> Contributes</a>
             </div>
         </div>
 
