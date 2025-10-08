@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router';
 import './Header.css'
 import Logo from '../../assets/logo.png'
 import { FaGithub } from 'react-icons/fa';
+import { IoApps, IoHomeOutline } from 'react-icons/io5';
+import { MdInstallDesktop } from 'react-icons/md';
 
 const Navbar = () => {
 
@@ -24,9 +26,9 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><NavLink to='/'>Home</NavLink></li>
-                        <li><NavLink to='/apps'>Apps</NavLink></li>
-                        <li><NavLink to='/installation'>Installation</NavLink></li>
+                        <li><NavLink to='/'> <IoHomeOutline /> Home</NavLink></li>
+                        <li><NavLink to='/apps'> <IoApps/> Apps</NavLink></li>
+                        <li><NavLink to='/installation'> <MdInstallDesktop />Installation</NavLink></li>
 
 
                         
@@ -36,9 +38,9 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><NavLink to='/'>Home</NavLink></li>
-                    <li><NavLink to='/apps'>Apps</NavLink></li>
-                    <li><NavLink to='/installation'>Installation</NavLink></li>
+                    <li><NavLink to='/'> <IoHomeOutline /> Home</NavLink></li>
+                    <li><NavLink to='/apps'> <IoApps/> Apps</NavLink></li>
+                    <li><NavLink to='/installation'> <MdInstallDesktop />Installation</NavLink></li>
 
                   
                 </ul>

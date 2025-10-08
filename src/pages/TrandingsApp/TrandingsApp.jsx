@@ -3,7 +3,7 @@ import React from 'react';
 const TrandingsApp = () => {
     return (
         <div>
-            <div className='text-center items-center'>
+            <div className='text-center items-center my-5'>
                 <h1 className='font-bold text-3xl'>Trending Apps</h1>
                 <p className='text-gray-700'>Explore All Trending Apps on the Market developed by us</p>
             </div>

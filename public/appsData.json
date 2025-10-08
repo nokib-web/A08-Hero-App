@@ -1,0 +1,367 @@
+[
+  {
+    "image": "https://i.ibb.co.com/SD8hHDYR/demo-app-6.webp",
+    "title": "Daily Planner ",
+    "companyName": "Productive Labs ",
+    "id": 1,
+    "description": "A powerful productivity app to manage daily tasks, reminders, and goals efficiently.",
+    "size": 45,
+    "reviews": 2300,
+    "ratingAvg": 4.6,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 210 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 650 },
+      { "name": "5 star", "count": 920 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/d4rYW0wL/unnamed.png",
+    "title": "FitTrack",
+    "companyName": "Wellness Inc • fittrack.io",
+    "id": 2,
+    "description": "Monitor your fitness goals, workouts, and progress in real time.",
+    "size": 58,
+    "reviews": 5400,
+    "ratingAvg": 4.8,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 230 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 370 },
+      { "name": "4 star", "count": 720 },
+      { "name": "5 star", "count": 3900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/F4SPyVqk/demo-app-1.webp",
+    "title": "PhotoSnap",
+    "companyName": "Pixelify ",
+    "id": 3,
+    "description": "Edit and enhance your photos with professional-grade filters and tools.",
+    "size": 97,
+    "reviews": 8900,
+    "ratingAvg": 4.3,
+    "downloads": "8M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 680 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 4320 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/d4Kw5FyS/images-2.jpg",
+    "title": "CodeMate",
+    "companyName": "DevTools Studio • codemate.dev",
+    "id": 4,
+    "description": "AI-powered code editor designed for developers who want speed and efficiency.",
+    "size": 112,
+    "reviews": 3300,
+    "ratingAvg": 4.5,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 240 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1460 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/RpGzDFQv/demo-app-4.webp",
+    "title": "BudgetBuddy",
+    "companyName": "FinSmart Ltd • budgetbuddy.com",
+    "id": 5,
+    "description": "Manage your finances with easy budgeting tools and AI spending insights.",
+    "size": 33,
+    "reviews": 2100,
+    "ratingAvg": 4.7,
+    "downloads": "7M",
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1060 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/YBK0L495/a-chosen-soul-Fn-GZcsme-D2-U-unsplash.jpg",
+    "title": "SoundWave",
+    "companyName": "Beatify Audio • soundwave.app",
+    "id": 6,
+    "description": "Listen to millions of songs, podcasts, and playlists tailored for you.",
+    "size": 82,
+    "reviews": 9500,
+    "ratingAvg": 4.4,
+    "downloads": "12M",
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1400 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 2600 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/273BMmn7/demo-app-2.webp",
+    "title": "WeatherNow",
+    "companyName": "SkyVision • weathernow.io",
+    "id": 7,
+    "description": "Accurate real-time weather forecasts with radar and alerts.",
+    "size": 24,
+    "reviews": 4300,
+    "ratingAvg": 4.2,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 340 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 1060 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/DHZnswRG/images-1.png",
+    "title": "EduVerse",
+    "companyName": "LearnTech Global • eduverse.io",
+    "id": 8,
+    "description": "Interactive online learning platform with thousands of free courses.",
+    "size": 64,
+    "reviews": 8000,
+    "ratingAvg": 4.9,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 6500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/hFF0fM8b/glenn-carstens-peters-ZWD3-Dx6a-UJg-unsplash.jpg",
+    "title": "TravelGo",
+    "companyName": "Explore World • travelgo.com",
+    "id": 9,
+    "description": "Book hotels, flights, and adventures all in one travel companion app.",
+    "size": 55,
+    "reviews": 7600,
+    "ratingAvg": 4.6,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 3880 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/WWYjtqpQ/unnamed-3.png",
+    "title": "NoteWise",
+    "companyName": "SmartApps Co. • notewise.app",
+    "id": 10,
+    "description": "Create, sync, and organize your notes across devices effortlessly.",
+    "size": 41,
+    "reviews": 3700,
+    "ratingAvg": 4.5,
+    "downloads": 2300000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 2080 }
+    ]
+  },
+  
+  {
+    "image": "https://i.ibb.co.com/7NRwBgpw/6081243-d60f659719f916c896809ebb168fbe4007b91c06-large.webp",
+    "title": "MindEase",
+    "companyName": "CalmTech • mindease.app",
+    "id": 11,
+    "description": "A meditation and mental wellness app designed to help you relax and focus.",
+    "size": 52,
+    "reviews": 6700,
+    "ratingAvg": 4.8,
+    "downloads": 6200000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 4300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/zW5FFCsP/unnamed-2.png",
+    "title": "CookUp",
+    "companyName": "KitchenHub • cookup.io",
+    "id": 12,
+    "description": "Discover recipes, plan meals, and improve your cooking with AI-powered suggestions.",
+    "size": 68,
+    "reviews": 5900,
+    "ratingAvg": 4.6,
+    "downloads": 4700000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 320 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 2980 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/chCHMM53/download.png",
+    "title": "CryptoVault",
+    "companyName": "FinEdge • cryptovault.io",
+    "id": 13,
+    "description": "Track, trade, and manage your cryptocurrency portfolio securely.",
+    "size": 89,
+    "reviews": 4300,
+    "ratingAvg": 4.4,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 1900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/tT6wzyMM/attachment-132249620.png",
+    "title": "ShopSmart",
+    "companyName": "RetailPro • shopsmart.io",
+    "id": 14,
+    "description": "Get discounts, compare prices, and track your online orders easily.",
+    "size": 39,
+    "reviews": 7200,
+    "ratingAvg": 4.7,
+    "downloads": 5600000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1900 },
+      { "name": "5 star", "count": 3900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/wZV4fyjb/latest-news-poster-banner-graphic-600nw-2453491007.webp",
+    "title": "DailyNews+",
+    "companyName": "InfoNow • dailynewsplus.com",
+    "id": 15,
+    "description": "Personalized news feed from trusted global and local sources.",
+    "size": 47,
+    "reviews": 6800,
+    "ratingAvg": 4.3,
+    "downloads": 7200000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 2900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5XYR8Hgj/images.png",
+    "title": "WorkHub",
+    "companyName": "TeamSpace • workhub.io",
+    "id": 16,
+    "description": "Collaborate with your team through messaging, file sharing, and video calls.",
+    "size": 88,
+    "reviews": 10200,
+    "ratingAvg": 4.5,
+    "downloads": 8300000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 4900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/JRxqq72K/images.jpg",
+    "title": "LangFlow",
+    "companyName": "GlobalTalk • langflow.io",
+    "id": 17,
+    "description": "Learn new languages with interactive lessons and AI conversations.",
+    "size": 76,
+    "reviews": 6400,
+    "ratingAvg": 4.9,
+    "downloads": 9500000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/SDfmVt8D/images-1.jpg",
+    "title": "GameVerse",
+    "companyName": "PlayHub • gameverse.io",
+    "id": 18,
+    "description": "Discover trending mobile games, leaderboards, and gaming news.",
+    "size": 120,
+    "reviews": 8900,
+    "ratingAvg": 4.2,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 3700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/CDYwgPM/unnamed-1.png",
+    "title": "Readify",
+    "companyName": "BookZone • readify.io",
+    "id": 19,
+    "description": "Read eBooks, listen to audiobooks, and discover your next favorite author.",
+    "size": 69,
+    "reviews": 5200,
+    "ratingAvg": 4.7,
+    "downloads": 6400000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 2500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Tqq6jHb6/cat-and-dog-love-your-pet-day-banner-greeting-card-social-media-pink-background-photo.jpg",
+    "title": "PetCare+",
+    "companyName": "HappyPaws • petcareplus.io",
+    "id": 20,
+    "description": "Track your pet’s health, appointments, and get expert tips from vets.",
+    "size": 54,
+    "reviews": 3100,
+    "ratingAvg": 4.6,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1450 }
+    ]
+  }
+
+
+
+
+]

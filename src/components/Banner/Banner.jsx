@@ -14,8 +14,8 @@ const Banner = () => {
 
     return (
         <div >
-            <div className=" bg-base-200 min-h-screen">
-                <div className="hero-content text-center">
+            <div className=" bg-base-200 ">
+                <div className=" text-center">
                     <div className="max-w-screen-2xl w-full mx-auto pt-12 ">
                         <h1 className="text-5xl font-bold">We Build <br /> <span className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text'>Productive</span> Apps</h1>
 
@@ -36,7 +36,7 @@ const Banner = () => {
                                 <h1 className='text-3xl font-bold '>Trusted by Millions, Built for You</h1>
 
 
-                                <div className='md:flex w-full mx-auto justify-center gap-12'>
+                                <div className='md:flex max-w-screen-2xl mx-auto justify-center items-center gap-12'>
                                     <div className='my-4'>
                                         <p className='font-extralight text-gray-300'><small>Total Downloads</small></p>
                                         <h1 className='text-4xl font-bold'>29.6M</h1>
