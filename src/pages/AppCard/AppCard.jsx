@@ -4,9 +4,9 @@ import { MdInstallDesktop } from 'react-icons/md';
 import { Link } from 'react-router';
 
 const AppCard = ({ app }) => {
-    console.log(app)
+    // console.log(app)
     return (
-        <Link to='/appDetails' >
+        <Link to={`/app/${app.id}`} >
             <div className=''>
                 <div className="card bg-base-100 p-4 shadow-sm">
                     <figure className=''>

@@ -9,7 +9,7 @@ const ErrorApps = () => {
       <div>
 
             <div className='min-h-screen flex flex-col'>
-                <Navbar></Navbar>
+                {/* <Navbar></Navbar> */}
 
                 <div >
                     <img className='items-center justify-center mx-auto my-4' src={ErrorAppImg} alt="Error" />
@@ -23,7 +23,7 @@ const ErrorApps = () => {
                 </div>
 
 
-                <Footer></Footer>
+                {/* <Footer></Footer> */}
             </div>
 
 
