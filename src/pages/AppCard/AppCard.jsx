@@ -7,12 +7,12 @@ const AppCard = ({ app }) => {
     // console.log(app)
     return (
         <Link to={`/app/${app.id}`} >
-            <div className=''>
+            <div className=' hover:scale-105 duration-300 '>
                 <div className="card bg-base-100 p-4 shadow-sm">
                     <figure className=''>
-                        <img className='w-full object-cover  h-48'
+                        <img className='w-full object-cover h-52'
                             src={app.image}
-                            alt="Shoes" />
+                            alt="App Image" />
                     </figure>
                     <div className="card-body">
                         <h2 className="card-title">{app.title}</h2>

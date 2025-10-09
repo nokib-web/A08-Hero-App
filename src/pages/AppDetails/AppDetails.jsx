@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useApps from '../../Hooks/useApps';
 import { useParams } from 'react-router';
 import downloadIcon from '../../assets/icon-downloads.png'
 import ratingsIcon from '../../assets/icon-ratings.png'
 import reviewIcon from '../../assets/icon-review.png'
 import Chart from '../Chart/Chart';
+import { toast } from 'react-toastify';
 
 
 
 const AppDetails = () => {
+    const [isInstalled, setIsInstalled] = useState(false);
+
+
+
+
     const { id } = useParams()
     const { apps, loading } = useApps();
     // console.log(apps)
@@ -23,46 +29,36 @@ const AppDetails = () => {
 
 
     const handleInstall = () => {
-        const installedApp = JSON.parse(localStorage.getItem('installedApp')) || [];
-        // console.log(installedApp)
+        setIsInstalled(true);
+      const installedApp = JSON.parse(localStorage.getItem('installedApp')) || [];
         let updatedInstalledApp = [];
         if (installedApp){
             const isDuplicate = installedApp.some(p => p.id === app.id);
             if (isDuplicate) {
-                alert('App Already Installed');
+                toast.error('App Already Installed');
                 return;
             }
             updatedInstalledApp = [...installedApp, app];
-        
-
         }
         else{
             updatedInstalledApp = [app];
         }       
         localStorage.setItem('installedApp', JSON.stringify(updatedInstalledApp));
-      
-
-
-
-        
-      
-
-
-        alert('App Installed Successfully')
+        toast.success('App Installed Successfully')
     }
 
 
     return (
         <div>
 
-            <div className='md:flex justify-start gap-8 py-10 border-b border-gray-300 '>
-                <div className=' '>
+            <div className='md:flex md:justify-start gap-8 py-10 border-b border-gray-300 '>
+                <div className=' '>   
                     <img className=' rounded-lg h-60' src={image} alt="" />
                 </div>
 
                 <div className=''>
                     <h1 className='text-2xl font-bold'>{title}</h1>
-                    <p className='border-b-1 text-gray-500 py-2'>Dveloped By: <span className=' font-bold text-[#632EE3]'>{companyName}</span></p>
+                    <p className='border-b-1 text-gray-500 py-2'>Dveloped By: <span className='  text-[#632EE3]'>{companyName}</span></p>
 
 
                     <div className='flex justify-start items-center gap-10 pt-4 '>
@@ -83,7 +79,7 @@ const AppDetails = () => {
                         </div>
                     </div>
 
-                    <button onClick={() => handleInstall(app.id)} className='btn bg-[#00D390] mt-4'>Install Now {size}</button>
+                    <button onClick={() => handleInstall(app.id)} className='btn bg-[#00D390] mt-4' disabled={isInstalled}>{isInstalled ? "Installed" : `Install Now ${size}`}  </button>
 
                 </div>
 
@@ -94,13 +90,12 @@ const AppDetails = () => {
             </div>
 
               <div className=''>
-                   <h1> Rechart:</h1>
-                    {
-                       ratings.map((rating, index) => <Chart key={index} rating={rating}></Chart>)
-                    }
+                    <h2 className='text-2xl font-bold ml-6 my-6'>Ratings</h2>
+                    <Chart ratings={ratings}></Chart>
                 </div>
 
-                <p>Description:{description}</p>
+                <p className=' text-gray-500 my-12'> <span className=' font-bold'>Description:</span> <br />
+                    {description}</p>
 
 
 

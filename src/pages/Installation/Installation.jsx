@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
+import DownloadLogo from '../../assets/icon-downloads.png'
+import RatingsLogo from '../../assets/icon-ratings.png'
+import ReviewLogo from '../../assets/icon-review.png'
+import { MdOutlinePhotoSizeSelectSmall } from 'react-icons/md';
 
 
 const Installation = () => {
 
     const [installedApps, setInstalledApps] = useState([]);
-    const [sortBySize, setSortBySize] = useState("none");
+    const [sortByDownloads, setSortByDownloads] = useState("none");
     
 
     useEffect(() => {
@@ -15,10 +20,10 @@ const Installation = () => {
 
     const sortedApps = (
         () => {
-        if (sortBySize === 'size-asc') {
-            return [...installedApps].sort((a, b) => a.size - b.size);
-        } else if (sortBySize === 'size-desc') {
-            return [...installedApps].sort((a, b) => b.size - a.size);
+        if (sortByDownloads === 'downloads-asc') {
+            return [...installedApps].sort((a, b) => parseInt(a.downloads) - parseInt(b.downloads));
+        } else if (sortByDownloads === 'downloads-desc') {
+            return [...installedApps].sort((a, b) => parseInt(b.downloads) - parseInt(a.downloads));
         }
         return installedApps;
     })();
@@ -32,7 +37,7 @@ const Installation = () => {
         setInstalledApps(updatedApps);
         // for local storage update
         localStorage.setItem('installedApp', JSON.stringify(updatedApps));
-        alert('App Uninstalled Successfully');
+        toast.success('App Uninstalled Successfully');
     }
 
     return (
@@ -44,14 +49,14 @@ const Installation = () => {
 
 
             <div className='flex justify-between mt-12 items-center'>
-                <h1>Your Installed Apps: {installedApps.length}</h1>
+                <h1 className='font-bold ml-4'>Your Installed Apps: {installedApps.length}</h1>
                 <select
-                    value={sortBySize}
-                    onChange={e => setSortBySize(e.target.value)}
-                    className="select select-bordered w-1/2 max-w-xs">
-                    <option value="none">Sort By Size</option>
-                    <option value="size-asc">Low-&gt;High</option>
-                    <option value="size-desc">High-&gt;Low</option>
+                    value={sortByDownloads}
+                    onChange={e => setSortByDownloads(e.target.value)}
+                    className="select w-1/3 md:w-50 max-w-xs">
+                    <option value="none">Sort By Downloads</option>
+                    <option value="downloads-asc">Low-&gt;High</option>
+                    <option value="downloads-desc">High-&gt;Low</option>
                 </select>
 
                 
@@ -71,15 +76,15 @@ const Installation = () => {
                                 <div>
                                     <h2 className='font-bold'>{app.title}</h2>
                                     <div className='flex gap-4'>
-                                        <p>{app.downloads}</p>
-                                        <p>{app.ratingAvg}</p>
-                                        <p>{app.size}MB</p>
+                                        <p className='flex items-center gap-1'><img className='w-4 h-4' src={DownloadLogo} alt="" />{app.downloads}</p>
+                                        <p className='flex items-center gap-1'><img className='w-4 h-4' src={RatingsLogo} alt="" />{app.ratingAvg}</p>
+                                        <p> {app.size}</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div>
-                                <button onClick={() => handleUninstall(app.id)} className='btn btn-danger'>Uninstall</button>
+                                <button onClick={() => handleUninstall(app.id)} className='btn btn-danger hover:bg-green-500 hover:scale-105'>Uninstall</button>
                             </div>
                             
                             

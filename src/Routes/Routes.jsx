@@ -13,6 +13,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
+    
     errorElement: <ErrorPage></ErrorPage>,
     children: [
         {
@@ -22,15 +23,16 @@ export const router = createBrowserRouter([
         {
             path: '/apps',
             Component: Apps,
-            errorElement: <ErrorApps></ErrorApps>
+            
         },
         {
             path: '/installation',
-            Component: Installation
+            Component: Installation,
         },
         {
           path:'/app/:id',
-          Component: AppDetails
+          Component: AppDetails,
+          errorElement: <ErrorApps></ErrorApps>
         }
     ]
   },

@@ -16,8 +16,8 @@ const ErrorApps = () => {
                 </div>
                 <div className='my-4 '>
                     <div className='text-center items-center'>
-                        <h1 className='font-bold text-3xl'>Oops, page not found!</h1>
-                        <p className='text-gray-700'>The page you are looking for is not available.</p>
+                        <h1 className='font-bold text-3xl'>Oops, App not found!</h1>
+                        <p className='text-gray-700'>The app you are looking for is not available.</p>
                         <Link to='/'><button className='btn my-2 rounded-lg text-white bg-gradient-to-tl from-[#9F62F2] to-[#632EE3]'>Go Back!</button></Link>
                     </div>
                 </div>

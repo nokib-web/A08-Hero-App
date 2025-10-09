@@ -4,11 +4,12 @@ import TrandingsApp from '../TrandingsApp/TrandingsApp';
 import useApps from '../../Hooks/useApps';
 import AppCard from '../AppCard/AppCard';
 import { Link } from 'react-router';
+import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 
 
 const Home = () => {
 
- const {apps}= useApps()
+ const {apps, loading}= useApps()
  const trandingsApps = apps.slice(0,8)
 
     return (
@@ -16,10 +17,15 @@ const Home = () => {
             <Banner></Banner>
             <TrandingsApp></TrandingsApp>
 
+           
+
            <div className=' my-8 gap-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
             
+            
             {
-                trandingsApps.map(app=><AppCard key={app.id} app={app}></AppCard>)
+                loading ?(<div className='col-span-full flex items-center justify-center'><LoadingSpinner /></div>) :(
+
+                trandingsApps.map(app=>(<AppCard key={app.id} app={app}></AppCard>)))
             }
            </div>
 
